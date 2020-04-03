@@ -3,13 +3,7 @@
 	<head>
 		<!DOCTYPE html>
 <meta charset="utf-8">
-
-<!-- Load d3.js -->
-<script src="https://d3js.org/d3.v4.js"></script>
-<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
-
-<!-- Create an element where the map will take place -->
+		
 <svg id="my_dataviz" width="400" height="300"></svg>
 	</head>
 	<body>
@@ -17,5 +11,13 @@
 		
 		<script>
 </script>
+<!-- Create an element where the map will take place -->
+<div id="observablehq-53694c5a"></div>
+	<script type="module">
+		import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+		import define from "https://api.observablehq.com/@c-kapavik/choropleth.js?v=3";
+		const inspect = Inspector.into("#observablehq-53694c5a");
+		(new Runtime).module(define, name => (name === "chart") && inspect());
+	</script>
 	</body>
 </html>
