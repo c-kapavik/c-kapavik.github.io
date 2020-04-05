@@ -6,12 +6,27 @@
 	<body>
 		<h1> 2020 Presidential Donations by Candidate </h1>
 <!-- Create an element where the map will take place -->
-<div id="observablehq-53694c5a"></div>
+	<div id="observablehq-eda75ac4"></div>
 	<script type="module">
-		import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-		import define from "https://api.observablehq.com/@c-kapavik/choropleth.js?v=3";
-		const inspect = Inspector.into("#observablehq-53694c5a");
-		(new Runtime).module(define, name => (name === "chart") && inspect());
+	import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+	import define from "https://api.observablehq.com/@c-kapavik/trump-choropleth.js?v=3";
+	const inspect = Inspector.into("#observablehq-eda75ac4");
+	(new Runtime).module(define, name => (name === "chart") && inspect());
+	</script>
+	<div id="observablehq-2f2ec651"></div>
+	<script type="module">
+	import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+	import define from "https://api.observablehq.com/@c-kapavik/biden-choropleth.js?v=3";
+	const inspect = Inspector.into("#observablehq-2f2ec651");
+	(new Runtime).module(define, name => (name === "chart") && inspect());
+	</script>
+	<div id="observablehq-2f9b49df"></div>
+	<script type="module">
+	import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+	import define from "https://api.observablehq.com/@c-kapavik/sanders-choropleth.js?v=3";
+	const inspect = Inspector.into("#observablehq-2f9b49df");
+	(new Runtime).module(define, name => (name === "chart") && inspect());
 	</script>
 	</body>
 </html>
+
