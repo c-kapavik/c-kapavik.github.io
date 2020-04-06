@@ -11,37 +11,48 @@
 			Donation data by county, April 2016. Data: <a href="https://www.fec.gov/data/browse-data/?tab=bulk-data">Federal Elections Commision</a>
 		</p>
 		<table width="1500">
-		  <tr>
-			<td>
-				<div id="observablehq-eda75ac4">
+			<tr>
+				<td>
+					 <h3> Trump Donations </h3>
+				</td>
+				<td>
+					<h3> Biden Donations </h3>
+				</td>
+				<td>
+					<h3> Sanders Donations </h3>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="observablehq-eda75ac4">
+						<script type="module">
+						import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+						import define from "https://api.observablehq.com/@c-kapavik/trump-choropleth.js?v=3";
+						const inspect = Inspector.into("#observablehq-eda75ac4");
+						(new Runtime).module(define, name => (name === "chart") && inspect());
+						</script>
+					</div>
+				</td>
+				<td>
+					<div id="observablehq-2f2ec651">
+						<script type="module">
+						import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+						import define from "https://api.observablehq.com/@c-kapavik/biden-choropleth.js?v=3";
+						const inspect = Inspector.into("#observablehq-2f2ec651");
+						(new Runtime).module(define, name => (name === "chart") && inspect());
+						</script>
+					</div>
+				</td>
+				<td>
+					<div id="observablehq-2f9b49df">
 					<script type="module">
 					import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-					import define from "https://api.observablehq.com/@c-kapavik/trump-choropleth.js?v=3";
-					const inspect = Inspector.into("#observablehq-eda75ac4");
+					import define from "https://api.observablehq.com/@c-kapavik/sanders-choropleth.js?v=3";
+					const inspect = Inspector.into("#observablehq-2f9b49df");
 					(new Runtime).module(define, name => (name === "chart") && inspect());
 					</script>
-				</div>
-			</td>
-			<td>
-				<div id="observablehq-2f2ec651">
-					<script type="module">
-					import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-					import define from "https://api.observablehq.com/@c-kapavik/biden-choropleth.js?v=3";
-					const inspect = Inspector.into("#observablehq-2f2ec651");
-					(new Runtime).module(define, name => (name === "chart") && inspect());
-					</script>
-				</div>
-			</td>
-			<td>
-				<div id="observablehq-2f9b49df">
-				<script type="module">
-				import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-				import define from "https://api.observablehq.com/@c-kapavik/sanders-choropleth.js?v=3";
-				const inspect = Inspector.into("#observablehq-2f9b49df");
-				(new Runtime).module(define, name => (name === "chart") && inspect());
-				</script>
-				</div>
-			</td>
+					</div>
+				</td>
 			</tr>
 		</table>
 	</body>
