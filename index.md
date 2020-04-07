@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
     		<title>Cole's Website for Learning Web Development</title>
-    		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<h1>
