@@ -1,1 +1,11 @@
 theme: jekyll-theme-slate
+title: My Playground for Web Development
+author: Cole Kapavik
+email: ckapavik@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is Cole's website for web development purposes.
+# social links
+twitter_username: your-twitter-handle # DO NOT include the @ character, or else the build will fail!
+github_username:  c-kapavik # DO NOT include the @ character, or else the build will fail!
+
+show_excerpts: true # set to false to remove excerpts on the homepage
